@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SweeperRNG</title>
+    <title>Random Minesweeper</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <h1>sweeper</h1>
+        <div class="controls">
+            <label>
+                Safe Cell Color: 
+                <input type="color" id="safe-color" value="#9bff9b">
+            </label>
+            <label>
+                Bomb Cell Color: 
+                <input type="color" id="bomb-color" value="#ff4d4d">
+            </label>
+            <button id="restart-button">Restart Game</button>
+            <p id="win-counter">Wins: 0</p>
+        </div>
         <div class="game-container" id="game-container"></div>
-        <button id="restart-button">Restart</button>
     </div>
     <script src="script.js"></script>
 </body>
