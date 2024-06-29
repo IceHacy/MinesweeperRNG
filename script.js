@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const safeColorInput = document.getElementById('safe-color');
     const bombColorInput = document.getElementById('bomb-color');
     const winCounterDisplay = document.getElementById('win-counter');
-    const gridSize = 20;
+    const gridSize = 8;
     const bombProbability = 0.3; 
     let winCounter = 0;
 
