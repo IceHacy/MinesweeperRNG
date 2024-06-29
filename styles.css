@@ -5,11 +5,23 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0; /* Slight gray background */
 }
 
 .container {
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin: 0 10px;
 }
 
 .game-container {
@@ -17,6 +29,7 @@ body {
     grid-template-columns: repeat(10, 40px);
     gap: 5px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .cell {
@@ -28,14 +41,15 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 18px;
-}
-
-.cell.bomb {
-    background-color: #ff4d4d;
+    border: 1px solid #b0b0b0;
 }
 
 .cell.safe {
-    background-color: #9bff9b;
+    /* Safe cell color will be set dynamically */
+}
+
+.cell.bomb {
+    /* Bomb cell color will be set dynamically */
 }
 
 button {
